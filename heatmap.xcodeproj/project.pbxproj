@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		99BEE1372B8651B400BFB82B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEE1362B8651B400BFB82B /* AppDelegate.swift */; };
 		99BEE1392B8651B400BFB82B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEE1382B8651B400BFB82B /* SceneDelegate.swift */; };
-		99BEE13B2B8651B400BFB82B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BEE13A2B8651B400BFB82B /* ViewController.swift */; };
 		99BEE13E2B8651B400BFB82B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BEE13C2B8651B400BFB82B /* Main.storyboard */; };
 		99BEE1402B8651B500BFB82B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BEE13F2B8651B500BFB82B /* Assets.xcassets */; };
 		99BEE1432B8651B500BFB82B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99BEE1412B8651B500BFB82B /* LaunchScreen.storyboard */; };
+		99D6C0732B86559800502FBB /* HeatmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D6C0712B86559800502FBB /* HeatmapViewController.swift */; };
+		99D6C07B2B86627100502FBB /* samples.json in Resources */ = {isa = PBXBuildFile; fileRef = 99D6C07A2B86627100502FBB /* samples.json */; };
+		EDA366EC9B9FC081BBAF0305 /* Pods_heatmap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505A2F711B7A131E74967D34 /* Pods_heatmap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A90A755AE122F07D97A7822 /* Pods-heatmap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heatmap.debug.xcconfig"; path = "Target Support Files/Pods-heatmap/Pods-heatmap.debug.xcconfig"; sourceTree = "<group>"; };
+		505A2F711B7A131E74967D34 /* Pods_heatmap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_heatmap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BEE1332B8651B400BFB82B /* heatmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heatmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BEE1362B8651B400BFB82B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99BEE1382B8651B400BFB82B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		99BEE13A2B8651B400BFB82B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99BEE13D2B8651B400BFB82B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99BEE13F2B8651B500BFB82B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99BEE1422B8651B500BFB82B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99BEE1442B8651B500BFB82B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99D6C0712B86559800502FBB /* HeatmapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeatmapViewController.swift; sourceTree = "<group>"; };
+		99D6C07A2B86627100502FBB /* samples.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = samples.json; sourceTree = "<group>"; };
+		C55A2AC2082C20250BE8DA57 /* Pods-heatmap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-heatmap.release.xcconfig"; path = "Target Support Files/Pods-heatmap/Pods-heatmap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA366EC9B9FC081BBAF0305 /* Pods_heatmap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E399717E03E0F22A0E46521 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A90A755AE122F07D97A7822 /* Pods-heatmap.debug.xcconfig */,
+				C55A2AC2082C20250BE8DA57 /* Pods-heatmap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8EFCCFF9A16BE475D8D6361D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				505A2F711B7A131E74967D34 /* Pods_heatmap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99BEE12A2B8651B400BFB82B = {
 			isa = PBXGroup;
 			children = (
 				99BEE1352B8651B400BFB82B /* heatmap */,
 				99BEE1342B8651B400BFB82B /* Products */,
+				2E399717E03E0F22A0E46521 /* Pods */,
+				8EFCCFF9A16BE475D8D6361D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +84,8 @@
 			children = (
 				99BEE1362B8651B400BFB82B /* AppDelegate.swift */,
 				99BEE1382B8651B400BFB82B /* SceneDelegate.swift */,
-				99BEE13A2B8651B400BFB82B /* ViewController.swift */,
+				99D6C0712B86559800502FBB /* HeatmapViewController.swift */,
+				99D6C07A2B86627100502FBB /* samples.json */,
 				99BEE13C2B8651B400BFB82B /* Main.storyboard */,
 				99BEE13F2B8651B500BFB82B /* Assets.xcassets */,
 				99BEE1412B8651B500BFB82B /* LaunchScreen.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99BEE1472B8651B500BFB82B /* Build configuration list for PBXNativeTarget "heatmap" */;
 			buildPhases = (
+				406E195CE18DF748D2D09409 /* [CP] Check Pods Manifest.lock */,
 				99BEE12F2B8651B400BFB82B /* Sources */,
 				99BEE1302B8651B400BFB82B /* Frameworks */,
 				99BEE1312B8651B400BFB82B /* Resources */,
+				D5DD4D8D92D5129F4EAB377B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,17 +157,60 @@
 				99BEE1432B8651B500BFB82B /* LaunchScreen.storyboard in Resources */,
 				99BEE1402B8651B500BFB82B /* Assets.xcassets in Resources */,
 				99BEE13E2B8651B400BFB82B /* Main.storyboard in Resources */,
+				99D6C07B2B86627100502FBB /* samples.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		406E195CE18DF748D2D09409 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-heatmap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5DD4D8D92D5129F4EAB377B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-heatmap/Pods-heatmap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-heatmap/Pods-heatmap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-heatmap/Pods-heatmap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99BEE12F2B8651B400BFB82B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99BEE13B2B8651B400BFB82B /* ViewController.swift in Sources */,
+				99D6C0732B86559800502FBB /* HeatmapViewController.swift in Sources */,
 				99BEE1372B8651B400BFB82B /* AppDelegate.swift in Sources */,
 				99BEE1392B8651B400BFB82B /* SceneDelegate.swift in Sources */,
 			);
@@ -287,12 +359,14 @@
 		};
 		99BEE1482B8651B500BFB82B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A90A755AE122F07D97A7822 /* Pods-heatmap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UC9DUX7Q6X;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = heatmap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -315,12 +389,14 @@
 		};
 		99BEE1492B8651B500BFB82B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C55A2AC2082C20250BE8DA57 /* Pods-heatmap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UC9DUX7Q6X;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = heatmap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
